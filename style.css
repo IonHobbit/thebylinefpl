@@ -21,8 +21,14 @@ body {
 }
 
 header {
+    background-color: #000000;
     background-image: url('assets/img/bg-crowd2.jpg');
     height: 100vh;
+}
+
+#signup {
+    background-color: #000000;
+    background-image: url('assets/img/bg-dark.jpg');
 }
 
 .byline-btn {

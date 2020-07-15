@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>The Byline FPL</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body id="page-top" onload="loader()">
+    <div id="loader">
+        <img src="assets/img/rhombus.gif" class="animated infinite pulse img-fluid" id="animated-img1">
+    </div>
+    <div id="website" class="d-none">
+        <div class="sidenav" id="mySidenav">
+            <div id="nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172"
+                        style=" fill:#000000;">
+                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <path d="M0,172v-172h172v172z" fill="none"></path>
+                            <g fill="#ffffff">
+                                <path d="M23.66763,33.80482l10.13502,-10.13537l114.52973,114.52573l-10.13502,10.13537z">
+                                </path>
+                                <path
+                                    d="M23.66945,138.19735l114.52573,-114.52973l10.13537,10.13502l-114.52573,114.52973z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a class="text-secondary" href="prizes.html">Prizes</a>
+                <a class="text-secondary" href="#" data-toggle="modal" data-target="#termsandconditions">Terms and
+                    Conditions</a>
+            </div>
+            <div id="nav-footer">
+                <h6 class="text-secondary">The BYLINE FPL</h6>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <!-- <a class="navbar-brand" style="margin-right: 900px;" href="index.html">THE BYLINE FPL</a> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="prizes.html">Prizes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#" data-toggle="modal"
+                            data-target="#termsandconditions">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <span onclick="openNav()" id="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
+                style=" fill:#000000;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#ffffff">
+                        <path
+                            d="M21.5,37.625v10.75h129v-10.75zM21.5,80.625v10.75h129v-10.75zM21.5,123.625v10.75h129v-10.75z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </span>
+
+        <div id="overlay" onclick="closeNav()"></div>
+
+        <div id="main">
+            <header class="masthead text-center text-white d-flex" id="header">
+                <div class="container my-auto">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <h1 class="text-uppercase" id="byline">
+                                <strong>The <br> Byline FPL</strong>
+                            </h1>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mx-auto">
+                        <p>2020/21 Season</p>
+                        <h2 class="mb-5 text-uppercase">
+                            <strong>Battle for $1000</strong>
+                        </h2>
+                        <div class="mb-5" id="fees">
+                            <p><strong>Registration fees</strong></p>
+                            <p>
+                                $3 | &#8358;1000 | &#8373;15 | &#163;2 | &#82;43
+                            </p>
+                        </div>
+                        <a class="btn btn-primary btn-xl js-scroll-trigger byline-btn" role="button"
+                            href="#signup">Register</a>
+                    </div>
+                </div>
+            </header>
+            <section id="signup" style="background-image: url(assets/img/bg-dark.jpg);">
+                <div class="container">
+                    <div class="row">
+                        <div class="d-none d-lg-block col-lg-7">
+                            <video src="https://media.giphy.com/media/VfDqzZ3Efb67HCN2n6/source.mp4" class="img-fluid"
+                                autoplay loop width="90%" muted>
+                                <!-- <div class="mx-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="600" height="600"
+                                    viewBox="0 0 172 172" style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                        stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                        text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <g>
+                                            <path
+                                                d="M86,14.48025c-11.87412,0 -21.5,9.5954 -21.5,21.43192c0,11.83652 9.62588,21.43192 21.5,21.43192c11.87412,0 21.5,-9.5954 21.5,-21.43192c0,-11.83652 -9.62588,-21.43192 -21.5,-21.43192z"
+                                                fill="#ffb74d"></path>
+                                            <path
+                                                d="M50.16667,100.33333l7.16667,50.16667v7.16667h57.33333v-7.16667l7.16667,-50.16667v-17.91667h-71.66667z"
+                                                fill="#666666"></path>
+                                            <path
+                                                d="M107.5,114.66667l-3.58333,35.83333v7.16667h10.75v-7.16667l6.91225,-48.375c0,0 -3.32892,9.85417 -14.07892,12.54167zM64.5,114.66667l3.58333,35.83333v7.16667h-10.75v-7.16667l-6.91225,-48.375c0,0 3.32892,9.85417 14.07892,12.54167z"
+                                                fill="#000000"></path>
+                                            <path
+                                                d="M113.70633,147.877c1.74867,1.74867 4.042,2.623 6.33533,2.623c2.29333,0 4.58667,-0.87433 6.33533,-2.623l6.20633,-6.20992l-12.66708,-12.66708l-6.20633,6.20633c-3.50092,3.50092 -3.50092,9.16975 -0.00358,12.67067zM58.29367,147.877c-1.74867,1.74867 -4.042,2.623 -6.33533,2.623c-2.29333,0 -4.58667,-0.87433 -6.33533,-2.623l-6.20633,-6.20992l12.66708,-12.66708l6.20633,6.20633c3.50092,3.50092 3.50092,9.16975 0.00358,12.67067z"
+                                                fill="#ffb74d"></path>
+                                            <path
+                                                d="M152.00142,110.71783l-22.02317,-26.39483c-5.71542,-7.9335 -14.921,-12.65633 -24.71425,-12.65633h-19.264h-19.264c-9.79325,0 -18.99883,4.72283 -24.71425,12.65633l-22.02317,26.39483c-2.97058,3.55825 -2.73408,8.79708 0.54467,12.07225l18.87342,18.877l12.66708,-12.66708l-13.08633,-13.08633l17.00292,-20.37842c0.16125,-0.1935 0.31533,-0.39417 0.46225,-0.602c2.3435,-3.34683 6.18483,-5.34992 10.27342,-5.34992h19.264h19.264c4.08858,0 7.92992,2.00308 10.27342,5.34992c0.14692,0.20783 0.29742,0.4085 0.46225,0.602l17.00292,20.37842l-13.08633,13.08633l12.66708,12.66708l18.877,-18.877c3.27875,-3.27158 3.51525,-8.51042 0.54108,-12.07225z"
+                                                fill="#666666"></path>
+                                            <path
+                                                d="M103.91667,71.66667v3.58333c0,8.02667 -1.54083,27.91417 -15.65917,38.5925l-0.1075,0.1075c-0.25083,0.17917 -0.50167,0.3225 -0.78833,0.43c-0.17917,0.1075 -0.35833,0.14333 -0.57333,0.17917c-0.25083,0.07167 -0.50167,0.1075 -0.78833,0.1075c-0.57333,0 -1.14667,-0.14333 -1.64833,-0.39417c-0.215,-0.14333 -0.43,-0.25083 -0.60917,-0.43c-0.215,-0.17917 -0.43,-0.39417 -0.60917,-0.60917c-1.1825,-1.57667 -0.86,-3.83417 0.71667,-5.01667c0.7525,-0.57333 1.46917,-1.1825 2.15,-1.8275c9.63917,-9.1375 10.75,-24.6175 10.75,-31.13917v-3.58333z"
+                                                fill="#bdbdbd"></path>
+                                            <path
+                                                d="M95.675,112.15475l-10.32717,-4.52217c-0.91017,-0.39775 -1.97442,0.01075 -2.37933,0.91375l-7.56442,16.99933c-0.40133,0.903 0.01075,1.96008 0.92092,2.35783l10.32717,4.52217c0.91017,0.39775 1.978,-0.01075 2.37933,-0.91375l7.56442,-16.99933c0.40133,-0.89942 -0.01075,-1.9565 -0.92092,-2.35783z"
+                                                fill="#ffffff"></path>
+                                            <path
+                                                d="M88.86667,113.23333c-0.17917,0.215 -0.39417,0.43 -0.60917,0.60917c-0.17917,0.17917 -0.39417,0.28667 -0.60917,0.43c-0.03583,0 -0.1075,0.03583 -0.14333,0.07167c-0.215,0.1075 -0.46583,0.17917 -0.71667,0.215c-0.25083,0.07167 -0.50167,0.1075 -0.78833,0.1075c-0.28667,0 -0.5375,-0.03583 -0.78833,-0.1075c-0.25083,-0.03583 -0.50167,-0.1075 -0.71667,-0.215c-0.03583,-0.03583 -0.1075,-0.07167 -0.14333,-0.07167c-0.17917,-0.1075 -0.35833,-0.215 -0.50167,-0.3225l-0.1075,-0.1075c-14.11833,-10.67833 -15.65917,-30.56583 -15.65917,-38.5925v-3.58333h7.16667v3.58333c0,6.52167 1.11083,22.00167 10.75,31.13917c0.68083,0.645 1.3975,1.25417 2.15,1.8275c1.57667,1.1825 1.89917,3.44 0.71667,5.01667z"
+                                                fill="#e0e0e0"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div> -->
+                        </div>
+                        <div class="col-10 col-lg-5 mx-auto">
+                            <h2 class="text-center text-white text-uppercase">THE BYLINE FPL</h2>
+                            <h6 class="text-center mb-3 text-muted text-uppercase">registration</h6>
+                            <form name="submit-to-google-sheet" data-aos="zoom-in" data-aos-duration="400"
+                                data-aos-once="true">
+                                <div class="form-row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="firstName">First Name</label>
+                                            <input type="text" class="form-control" name="firstName" id="firstName"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="lastName">Last Name</label>
+                                            <input type="text" class="form-control" name="lastName" id="lastName"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="fplTeam">FPL Team</label>
+                                            <input type="text" class="form-control" name="fplTeam" id="fplTeam"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                oninput="disclaimer()" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="number">WhatsApp Number</label>
+                                            <input type="text" class="form-control" name="phoneNumber" id="number">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="twitter">Twitter Handle</label>
+                                            <input type="text" class="form-control" name="twitter" id="twitter"
+                                                value="@">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="country">Country</label>
+                                            <select class="form-control select" name="country" id="country" required>
+                                                <option value="Nigeria">Nigeria</option>
+                                                <option value="USA">USA</option>
+                                                <option value="Ghana">Ghana</option>
+                                                <option value="England">England</option>
+                                                <option value="South Africa">South Africa</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check mx-auto">
+                                            <input type="checkbox" class="form-check-input check" name="tac" id="tac"
+                                                required>
+                                            <label for="tac">
+                                                I agree to the <a href="#" data-toggle="modal"
+                                                    data-target="#termsandconditions" class="text-primary">terms and
+                                                    conditions</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <span class="text-white" id="disclaimer">Disclaimer* The league code will be sent to
+                                        your mail once the
+                                        season resumes
+                                        to protect the integrity of the league. Once
+                                        sent, it shouldn’t be disclosed to any non-member as failure to do so will lead
+                                        to
+                                        disqualification
+                                    </span>
+                                    <button class="btn btn-primary btn-xl mx-auto mt-2 byline-btn"
+                                        type="submit">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </section>
+            <section id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <h2 class="section-heading">Let's Get In Touch!</h2>
+                            <hr class="my-4">
+                            <p class="mb-5">For sponsorships and enquiries contact us on our social accounts</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-lg-3 mx-auto text-center">
+                            <a target="_blank" href="https://twitter.com/thebylinefpl">
+                                <i class="fa fa-twitter fa-3x mb-3 sr-contact" data-aos="zoom-in"
+                                    data-aos-duration="300" data-aos-once="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-3 col-lg-3 mx-auto text-center">
+                            <a target="_blank"
+                                href="https://wa.me/2348134644494?text=I%20am%20interested%20in%20joining/sponsoring%20The%20Byline">
+                                <i class="fa fa-whatsapp fa-3x mb-3 sr-contact" data-aos="zoom-in"
+                                    data-aos-duration="300" data-aos-once="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-3 col-lg-3 mx-auto text-center">
+                            <a target="_blank" href="https://instagram.com/thebylinefpl">
+                                <i class="fa fa-instagram fa-3x mb-3 sr-contact" data-aos="zoom-in"
+                                    data-aos-duration="300" data-aos-once="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-3 col-lg-3 mx-auto text-center">
+                            <a target="_blank" href="mailto:thebylinefpl@gmail.com">
+                                <i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-aos="zoom-in"
+                                    data-aos-duration="300" data-aos-delay="300" data-aos-once="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modal -->
+            <div class="modal fade" id="termsandconditions" tabindex="-1" role="dialog"
+                aria-labelledby="termsandconditionsTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row my-3">
+                                    <div class="col-10">
+                                        <h5 class="modal-title">Terms and Conditions</h5>
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col-10 mx-auto">
+                                        <h5 class="text-uppercase">
+                                            <strong>Prelude</strong>
+                                        </h5>
+
+                                    </div>
+                                    <div class="col-11 mx-auto ">
+                                        <p>
+                                            These Terms and Conditions constitute a legally binding agreement between
+                                            you,
+                                            whether personally or on behalf of an entity ("you") and "The Byline FPL"
+                                            ("us"),
+                                            concerning your registration for the Byline FPL.
+                                        </p>
+                                        <p>
+                                            By registering you agree that you have read, understood and are bound by all
+                                            the
+                                            terms stated below.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col-10 mx-auto">
+                                        <h5 class="text-uppercase">
+                                            <strong>General Terms</strong>
+                                        </h5>
+
+                                    </div>
+                                    <div class="col-11 mx-auto">
+                                        <p>
+                                            Prize money shall be valued at &#8358;360 to a dollar for all currencies
+                                            with
+                                            the
+                                            dollar as a yardstick
+                                        </p>
+                                        <p>
+                                            Paystack shall be the payment platform for all transactions. In the event
+                                            that paystack is unable to be used, your preferred platform will be used
+                                            with
+                                            the charges split 50-50 between you and us.
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col-10 mx-auto">
+                                        <h5 class="text-uppercase">
+                                            <strong>Rules</strong>
+                                        </h5>
+
+                                    </div>
+                                    <div class="col-11 mx-auto">
+                                        <p>
+                                            The rules and regulations would be sent via email once the league resumes
+                                            along
+                                            with the league code
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbyhw7qHgKArZtSrVr4VSHv4nBrD_XwOLKH_JHPVQTdPl-wu7Tao/exec'
+                const form = document.forms['submit-to-google-sheet']
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => console.log('Success!', response))
+                        .catch(error => console.error('Error!', error.message))
+                })
+            </script>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+            <script src="assets/js/creative.js"></script>
+            <script src="assets/js/bs-animation.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

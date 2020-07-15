@@ -1,0 +1,224 @@
+a, input[type=text], input[type=email], label, select, h1, h3, h6, p, span {
+    font-family: 'Open Sans';
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    margin: -20px 0 0 -20px;
+}
+
+header {
+    background-image: url('assets/img/bg-crowd2.jpg');
+    height: 100vh;
+}
+
+.byline-btn {
+    border-radius: 5px;
+    width: 110px;
+    height: 45px;
+    padding: 10px;
+}
+
+hr {
+    margin-top: 2px !important;
+    margin-bottom: 10px !important;
+}
+
+#disclaimer {
+    display: none;
+}
+
+/*Mobile Devices*/
+
+@media only screen and (max-width:600px) {
+    .masthead {
+        padding-top: 60px !important;
+    }
+    #disclaimer {
+        font-size: 10px;
+    }
+    #fees p {
+        font-size: 16px;
+    }
+    .navbar {
+        display: none;
+    }
+    .sidenav {
+        height: 100%;
+        /* 100% Full-height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 2;
+        /* Stay on top */
+        top: 0;
+        /* Stay at the top */
+        right: 0;
+        background-color: #111;
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
+    }
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 16px 8px 16px 32px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    #byline {
+        font-size: 40px;
+    }
+    #prize_byline, #prize_byline p {
+        font-size: 20px;
+        text-decoration: none;
+    }
+    #menu {
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        margin: 10px 20px 0px 0px;
+    }
+    #nav-footer {
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        margin-left: 70px;
+        margin-bottom: 12px;
+    }
+    .modal p {
+        font-size: 14px;
+    }
+}
+
+/*Larger Screen Devices*/
+
+@media only screen and (min-width:601px) {
+    .navbar {
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    .sidenav {
+        display: none;
+    }
+    #menu {
+        display: none;
+    }
+    #disclaimer {
+        font-size: 14px;
+    }
+    #prize_byline, #prize_byline p {
+        font-size: 30px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .rule {
+        width: 40%;
+    }
+}
+
+#prizes {
+    overflow-y: scroll;
+    height: 350px;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+label {
+    color: #ffffff;
+}
+
+input[type=text], input[type=email], input[type=checkbox] {
+    border-radius: 0px;
+    border: 0px;
+}
+
+.select, .check {
+    border-radius: 0px;
+    border: 0px;
+    background-color: #ffffff;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+.rule {
+    border-color: #ffffff;
+    border-width: 1px;
+    max-width: 60%;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #fb8f01;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}

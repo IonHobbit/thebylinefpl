@@ -41,14 +41,13 @@ function hideWhatsapp() {
 }
 
 function validate() {
-    if (document.getElementById("submit").classList.contains("submit") || document.getElementById("submit").disabled) {
+    if (document.getElementById("tac").checked) {
         document.getElementById("submit").classList.remove("submit");
         document.getElementById("submit").disabled = false;
     } else {
         document.getElementById("submit").classList.add("submit");
         document.getElementById("submit").disabled = true;
     }
-
 }
 
 function pay() {

@@ -27,3 +27,23 @@ function page() {
     document.getElementById("website").classList.remove("d-none");
     document.getElementById("website").classList.add("d-block");
 }
+
+function showWhatsapp() {
+    document.getElementById("whatsapp").classList.remove("d-none");
+    document.getElementById("whatsapp").classList.add("d-block");
+}
+
+function hideWhatsapp() {
+    if (document.getElementById("whatsapp").classList.contains("d-block")) {
+        document.getElementById("whatsapp").classList.add("d-none");
+        document.getElementById("whatsapp").classList.remove("d-block");
+    }
+}
+
+function validate() {
+    if (document.getElementById("submit").classList.contains("submit")) {
+        document.getElementById("submit").classList.remove("submit");
+    } else {
+        document.getElementById("submit").classList.add("submit");
+    }
+}

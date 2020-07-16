@@ -191,12 +191,6 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <label for="number">WhatsApp Number</label>
-                                            <input type="text" class="form-control" name="phoneNumber" id="number">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
                                             <label for="twitter">Twitter Handle</label>
                                             <input type="text" class="form-control" name="twitter" id="twitter"
                                                 value="@">
@@ -214,10 +208,29 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-12 mx-auto">
+                                        <div class="form=group">
+                                            <label for="numcheck">Do you want to be added to the WhatsApp Group?
+                                                <span class="text-white ml-3">Yes</span>
+                                                <input type="radio" value="yes" name="numcheck" onclick="showWhatsapp()"
+                                                    id="namecheck">
+                                                <span class="text-white ml-3">No</span>
+                                                <input type="radio" value="no" name="numcheck" onclick="hideWhatsapp()"
+                                                    id="namecheck">
+
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-none" id="whatsapp">
+                                        <div class="form-group">
+                                            <label for="number">WhatsApp Number</label>
+                                            <input type="text" class="form-control" name="phoneNumber" id="number">
+                                        </div>
+                                    </div>
                                     <div class="col-12">
                                         <div class="form-check mx-auto">
-                                            <input type="checkbox" class="form-check-input check" name="tac" id="tac"
-                                                required>
+                                            <input type="checkbox" class="form-check-input check" oninput="validate()"
+                                                name="tac" id="tac" required>
                                             <label for="tac">
                                                 I agree to the <a href="#" data-toggle="modal"
                                                     data-target="#termsandconditions" class="text-primary">terms and
@@ -233,8 +246,8 @@
                                         to
                                         disqualification
                                     </span>
-                                    <button class="btn btn-primary btn-xl mx-auto mt-2 byline-btn"
-                                        type="submit">Continue</button>
+                                    <button class="btn btn-primary btn-xl mx-auto mt-2 byline-btn submit" id="submit"
+                                        type="submit">Pay</button>
                                 </div>
                             </form>
                         </div>

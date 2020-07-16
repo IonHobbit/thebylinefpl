@@ -41,9 +41,12 @@ function hideWhatsapp() {
 }
 
 function validate() {
-    if (document.getElementById("submit").classList.contains("submit")) {
+    if (document.getElementById("submit").classList.contains("submit") && document.getElementById("submit").disabled) {
         document.getElementById("submit").classList.remove("submit");
+        document.getElementById("submit").disabled = false;
     } else {
         document.getElementById("submit").classList.add("submit");
+        document.getElementById("submit").disabled = true;
     }
+
 }

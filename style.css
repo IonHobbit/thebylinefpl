@@ -38,7 +38,7 @@ header {
     padding: 10px;
 }
 
-.submit {
+.submit:disabled {
     background-color: #8d8d8d;
 }
 

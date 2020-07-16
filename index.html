@@ -18,7 +18,7 @@
 
 <body id="page-top" onload="loader()">
     <div id="loader">
-        <img src="assets/img/rhombus.gif" class="animated infinite pulse img-fluid" id="animated-img1">
+        <img src="assets/img/page-loader.gif" class="animated infinite pulse img-fluid" id="animated-img1">
     </div>
     <div id="website" class="d-none">
         <div class="sidenav" id="mySidenav">
@@ -158,35 +158,35 @@
                         <div class="col-10 col-lg-5 mx-auto">
                             <h2 class="text-center text-white text-uppercase">THE BYLINE FPL</h2>
                             <h6 class="text-center mb-3 text-muted text-uppercase">registration</h6>
-                            <form name="submit-to-google-sheet" data-aos="zoom-in" data-aos-duration="400"
-                                data-aos-once="true">
+                            <form name="submit-to-google-sheet" id="form_register" data-aos="zoom-in"
+                                data-aos-duration="400" data-aos-once="true">
                                 <div class="form-row">
                                     <div class="col-6">
                                         <div class="form-group">
-                                            <label for="firstName">First Name</label>
+                                            <label for="firstName">First Name *</label>
                                             <input type="text" class="form-control" name="firstName" id="firstName"
                                                 required>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group">
-                                            <label for="lastName">Last Name</label>
+                                            <label for="lastName">Last Name *</label>
                                             <input type="text" class="form-control" name="lastName" id="lastName"
                                                 required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <label for="fplTeam">FPL Team</label>
-                                            <input type="text" class="form-control" name="fplTeam" id="fplTeam"
-                                                required>
+                                            <label for="email">Email *</label>
+                                            <input type="email" class="form-control" name="email" id="email"
+                                                oninput="disclaimer()" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <input type="email" class="form-control" name="email" id="email"
-                                                oninput="disclaimer()" required>
+                                            <label for="fplTeam">FPL Team *</label>
+                                            <input type="text" class="form-control" name="fplTeam" id="fplTeam"
+                                                required>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -198,7 +198,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <label for="country">Country</label>
+                                            <label for="country">Country *</label>
                                             <select class="form-control select" name="country" id="country" required>
                                                 <option value="Nigeria">Nigeria</option>
                                                 <option value="USA">USA</option>
@@ -247,23 +247,29 @@
                                         disqualification
                                     </span>
                                     <button class="btn btn-primary btn-xl mx-auto mt-2 byline-btn submit" id="submit"
-                                        type="submit" disabled>Pay</button>
+                                        onclick="pay()" type="submit" disabled>Pay</button>
                                 </div>
                             </form>
+                            <div id="confirmation" class="mx-auto text-center d-none">
+                                <img src="assets/img/pay-loader.gif">
+                                <h6 class="text-center mt-4 text-white">Registration Complete <br> Redirecting to
+                                    Paystack...
+                                </h6>
+                            </div>
                         </div>
                     </div>
             </section>
             <section id="contact">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 mx-auto text-center">
+                        <div class="col-lg-8 mx-auto text-center text-white">
                             <h2 class="section-heading">Let's Get In Touch!</h2>
                             <hr class="my-4">
                             <p class="mb-5">For sponsorships and enquiries contact us on our social accounts</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-3 col-lg-3 mx-auto text-center">
+                        <div class="col-3 col-lg-3 mx-auto text-center text">
                             <a target="_blank" href="https://twitter.com/thebylinefpl">
                                 <i class="fa fa-twitter fa-3x mb-3 sr-contact" data-aos="zoom-in"
                                     data-aos-duration="300" data-aos-once="true"></i>

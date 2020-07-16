@@ -41,7 +41,7 @@ function hideWhatsapp() {
 }
 
 function validate() {
-    if (document.getElementById("submit").classList.contains("submit") && document.getElementById("submit").disabled) {
+    if (document.getElementById("submit").classList.contains("submit") || document.getElementById("submit").disabled) {
         document.getElementById("submit").classList.remove("submit");
         document.getElementById("submit").disabled = false;
     } else {
@@ -49,4 +49,12 @@ function validate() {
         document.getElementById("submit").disabled = true;
     }
 
+}
+
+function pay() {
+    document.getElementById("form_register").classList.add("d-none");
+    document.getElementById("confirmation").classList.remove("d-none");
+    document.getElementById("confirmation").classList.add("d-block");
+    setTimeout("window.location = 'https://paystack.com/pay/thebyline';", 2000);
+    // setTimeout("document.getElementById('form_register').reset();", 6000);
 }

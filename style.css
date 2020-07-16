@@ -7,7 +7,7 @@ a, input[type=text], input[type=email], label, select, h1, h3, h6, p, span {
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
 #loader {
@@ -15,9 +15,9 @@ body {
     left: 50%;
     top: 50%;
     z-index: 1;
-    width: 100px;
-    height: 100px;
-    margin: -20px 0 0 -20px;
+    width: 91px;
+    height: 91px;
+    margin: -50px 0 0 -40px;
 }
 
 header {

@@ -158,7 +158,7 @@
                         <div class="col-10 col-lg-5 mx-auto">
                             <h2 class="text-center text-white text-uppercase">THE BYLINE FPL</h2>
                             <h6 class="text-center mb-3 text-muted text-uppercase">registration</h6>
-                            <form name="submit-to-google-sheet" id="form_register" data-aos="zoom-in"
+                            <form name="submit-to-google-sheet" onsubmit="pay()" id="form_register" data-aos="zoom-in"
                                 data-aos-duration="400" data-aos-once="true">
                                 <div class="form-row">
                                     <div class="col-6">
@@ -208,6 +208,12 @@
                                             </select>
                                         </div>
                                     </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="ref">How did you learn of The Byline FPL?</label>
+                                            <input type="text" class="form-control" name="ref" id="ref">
+                                        </div>
+                                    </div>
                                     <div class="col-12 mx-auto">
                                         <div class="form=group">
                                             <label for="numcheck">Do you want to join the WhatsApp Group?
@@ -247,7 +253,7 @@
                                         disqualification
                                     </span>
                                     <button class="btn btn-primary btn-xl mx-auto mt-2 byline-btn submit" id="submit"
-                                        onclick="pay()" type="submit" disabled>Pay</button>
+                                        type="submit" disabled>Pay</button>
                                 </div>
                             </form>
                             <div id="confirmation" class="mx-auto text-center d-none">

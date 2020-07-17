@@ -232,11 +232,11 @@ input[type=text], input[type=email], input[type=checkbox] {
 /* Track */
 
 ::-webkit-scrollbar-track {
-    background: #fb8f01;
+    background: #ffffff;
 }
 
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: #fff;
+    background: #fb8f01;
 }

@@ -103,7 +103,7 @@
                         <div class="mb-5" id="fees">
                             <p><strong>Registration fees</strong></p>
                             <p>
-                                $3 | &#8358;1000 | &#8373;15 | &#163;2 | &#82;43
+                                $3 | &#8358;1000 | &#8373;15 | &#163;2
                             </p>
                         </div>
                         <a class="btn btn-primary btn-xl js-scroll-trigger byline-btn" role="button"
@@ -199,7 +199,7 @@
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label for="country">Country *</label>
-                                            <select class="form-control select" name="country" id="country" required>
+                                            <select class="form-control select" name="country" id="country" required="">
                                                 <option value="Nigeria">Nigeria</option>
                                                 <option value="USA">USA</option>
                                                 <option value="Ghana">Ghana</option>
@@ -211,7 +211,13 @@
                                     <div class="col-12">
                                         <div class="form-group">
                                             <label for="ref">How did you learn of The Byline FPL?</label>
-                                            <input type="text" class="form-control" name="ref" id="ref">
+                                            <select class="form-control select" name="ref" id="ref" required>
+                                                <option value="">---</option>
+                                                <option value="WhatsApp">WhatsApp</option>
+                                                <option value="Twitter">Twitter</option>
+                                                <option value="Instagram">Instagram</option>
+                                                <option value="Other">Other</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="col-12 mx-auto">

@@ -4,6 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>The Byline FPL</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet"
@@ -18,7 +35,7 @@
 
 <body id="page-top" onload="loader()">
     <div id="loader">
-        <img src="assets/img/page-loader.gif" class="animated infinite pulse img-fluid" id="animated-img1">
+        <img src="assets/img/page-loader2.gif" class="animated infinite pulse img-fluid" id="animated-img1">
     </div>
     <div id="website" class="d-none">
         <div class="sidenav" id="mySidenav">
@@ -46,7 +63,7 @@
                     Conditions</a>
             </div>
             <div id="nav-footer">
-                <h6 class="text-secondary">The BYLINE FPL</h6>
+                <img src="assets/img/logo-w.png" class="img-fluid" style="height: 50px;">
             </div>
         </div>
 
@@ -65,9 +82,9 @@
             </div>
         </nav>
 
-        <span onclick="openNav()" id="menu">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 172 172"
-                style=" fill:#000000;">
+        <span id="menu">
+            <svg id="bars" onclick="openNav()" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                viewBox="0 0 172 172" style=" fill:#000000;">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
                     stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
                     font-family="none" font-weight="none" font-size="none" text-anchor="none"
@@ -89,19 +106,20 @@
                 <div class="container my-auto">
                     <div class="row">
                         <div class="col-lg-10 mx-auto">
-                            <h1 class="text-uppercase" id="byline">
+                            <img class="img-fluid" style="height: 120px;" src="assets/img/logo-w.png">
+                            <!-- <h1 class="text-uppercase" id="byline">
                                 <strong>The <br> Byline FPL</strong>
-                            </h1>
-                            <hr>
+                            </h1> -->
+                            <!-- <hr> -->
                         </div>
                     </div>
-                    <div class="col-lg-6 mx-auto">
-                        <p>2020/21 Season</p>
-                        <h2 class="mb-5 text-uppercase">
+                    <div class="col-lg-7 mx-auto">
+                        <!-- <p>2020/21 Season</p> -->
+                        <h1 class="mb-3 mt-3 text-uppercase">
                             <strong>Battle for $1000</strong>
-                        </h2>
-                        <div class="mb-5" id="fees">
-                            <p><strong>Registration fees</strong></p>
+                        </h1>
+                        <div class="mb-5 mt-3" id="fees">
+                            <h6><strong>Registration fees</strong></h6>
                             <p>
                                 $3 | &#8358;1000 | &#8373;15 | &#163;2
                             </p>
@@ -204,7 +222,6 @@
                                                 <option value="USA">USA</option>
                                                 <option value="Ghana">Ghana</option>
                                                 <option value="England">England</option>
-                                                <option value="South Africa">South Africa</option>
                                             </select>
                                         </div>
                                     </div>
@@ -236,6 +253,13 @@
                                     <div class="col-12 d-none" id="whatsapp">
                                         <div class="form-group">
                                             <label for="number">WhatsApp Number</label>
+                                            <br>
+                                            <select class="form-control select" name="code" id="code">
+                                                <option value="+234">+234</option>
+                                                <option value="+1">+1</option>
+                                                <option value="+44">+44</option>
+                                                <option value="+233">+233</option>
+                                            </select>
                                             <input type="text" class="form-control" name="phoneNumber" id="number">
                                         </div>
                                     </div>
@@ -309,8 +333,11 @@
                     </div>
                 </div>
             </section>
+            <footer class="text-center text-white mb-3">
+                <p>Copyright &#169; The Byline FPL 2020. <br> All Rights Reserved.</p>
+            </footer>
 
-            <!-- Modal -->
+            <!-- T&C -->
             <div class="modal fade" id="termsandconditions" tabindex="-1" role="dialog"
                 aria-labelledby="termsandconditionsTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -319,7 +346,8 @@
                             <div class="container">
                                 <div class="row my-3">
                                     <div class="col-10">
-                                        <h5 class="modal-title">Terms and Conditions</h5>
+                                        <img src="assets/img/logo.png" class="img-fluid" style="height: 50px;">
+                                        <h5 class="modal-title mb-3">Terms and Conditions</h5>
                                     </div>
                                     <div class="col-2">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">

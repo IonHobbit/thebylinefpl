@@ -59,6 +59,16 @@ hr {
     margin-top: 50%;
 }
 
+#number {
+    width: 69%;
+    display: inline;
+}
+
+#code {
+    width: 29%;
+    display: inline;
+}
+
 /*Mobile Devices*/
 
 @media only screen and (max-width:600px) {
@@ -119,9 +129,15 @@ hr {
     }
     #menu {
         z-index: 1;
-        position: absolute;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+    }
+    #bars {
+        z-index: 1;
+        position: relative;
         right: 0;
-        margin: 10px 20px 0px 0px;
+        margin: 10px 20px 0px 300px;
     }
     #nav-footer {
         z-index: 1;
@@ -132,6 +148,15 @@ hr {
     }
     .modal p {
         font-size: 14px;
+    }
+    .cards {
+        height: auto;
+        border: 2px solid #ffffff;
+        padding: 25px;
+    }
+    .prize {
+        overflow-y: scroll;
+        height: 55vh;
     }
 }
 
@@ -161,11 +186,24 @@ hr {
     .rule {
         width: 40%;
     }
+    .cards {
+        height: auto;
+        border: 2px solid #ffffff;
+        padding: 25px;
+        /* background-image: url("assets/img/1.png"); */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #ws {
+        height: 100vh;
+    }
 }
 
-#prizes {
-    overflow-y: scroll;
-    height: 350px;
+.prizes {
+    /* overflow-y: scroll; */
+    background-image: url('assets/img/bg-win2.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 .sidenav a:hover {
@@ -238,5 +276,5 @@ input[type=text], input[type=email], input[type=checkbox] {
 /* Handle */
 
 ::-webkit-scrollbar-thumb {
-    background: #fb8f01;
+    background: #ed1c24;
 }

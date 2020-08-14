@@ -54,6 +54,6 @@ function pay() {
     document.getElementById("form_register").classList.add("d-none");
     document.getElementById("confirmation").classList.remove("d-none");
     document.getElementById("confirmation").classList.add("d-block");
-    setTimeout("window.location = 'https://paystack.com/pay/thebyline';", 2000);
+    setTimeout("window.location = 'https://flutterwave.com/pay/the-byline-fpl';", 2000);
     // setTimeout("document.getElementById('form_register').reset();", 6000);
 }

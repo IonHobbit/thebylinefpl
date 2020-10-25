@@ -270,7 +270,7 @@ input[type=text], input[type=email], input[type=checkbox] {
 /* Track */
 
 ::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #000000;
 }
 
 /* Handle */
